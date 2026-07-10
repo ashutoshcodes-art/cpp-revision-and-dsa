@@ -1,5 +1,4 @@
 #include <iostream>
-#include <utility>
 #include <vector>
 using namespace std;
 
@@ -61,11 +60,11 @@ int main() {
         vector <int> v4;
         v4.reserve(100); // Reserves memory for at least 100 elements.
                         // Size remains unchanged.
-        cout<<"V4 before size : "<<v4.size()<<" capacity : "<<v4.capacity()<<'\n';
+        cout<<"V4 before size : "<<v4.size()<<" capacity : "<<v4.capacity()<<'\n';// ans = 0 & 100
         
         v4.resize(50); // Resize vector to contain 50 elements.
                       // New integers are initialized to 0.
-        cout<<"V4 after size : "<<v4.size()<<" capacity : "<<v4.capacity()<<'\n';
+        cout<<"V4 after size : "<<v4.size()<<" capacity : "<<v4.capacity()<<'\n'; // ans = 50 & 100
         cout<<v4[34]<<'\n';
         
         //[ERASE FUNCTION]--------------------------------------------------------------------------------------------
@@ -104,6 +103,8 @@ int main() {
 
         b.swap(a); //Swaps a and b vectors all elements in each other
 
+        //[CLEAR VECTOR]-----------------------------------------------------------------------------------------------------
+            a.clear();
         
         for(auto temp : a){
             cout<<temp<<" ";

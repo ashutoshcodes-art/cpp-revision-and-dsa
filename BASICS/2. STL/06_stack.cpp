@@ -10,7 +10,7 @@ int main(){
 
     stack <int> st;
 
-    //[LIFO OPERATIONS]------------------------------------------------------------------------------------------
+    //[LIFO(Last In First Out) OPERATIONS]-----------------------------------------------------------------------
 
     // Stack is a Container Adapter.
     // Uses deque internally by default.

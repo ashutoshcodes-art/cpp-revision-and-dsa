@@ -2,6 +2,8 @@
 #include <deque>
 using namespace std;
 
+// Header File : <deque>
+
 int main(){
 
     //[INITIALISATION]------------------------------------------------------------------------------------------------------
@@ -12,7 +14,6 @@ int main(){
     //Why not vector?
     //deque because push_back() and pop_front() are O(1), while vector::pop_front() (or erasing the first element) requires shifting all remaining elements, making it O(n).
 
-    // Header File : <deque>
 
     // Internally stores elements in multiple contiguous blocks.
     // Provides O(1) insertion/deletion at both ends.
